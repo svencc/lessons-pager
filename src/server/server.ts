@@ -1,12 +1,11 @@
-
-
 import * as express from 'express';
 import {Application} from 'express';
-import {newsletterRoute} from "./newsletterRoute";
-import {loginRoute} from "./loginRoute";
-import {courseRoute} from "./courseRoute";
-import {lessonsRoute} from "./lessonsRoute";
-import {lessonDetailRoute} from "./lessonDetailRoute";
+import {newsletterRoute} from './newsletterRoute';
+import {loginRoute} from './loginRoute';
+import {courseRoute} from './courseRoute';
+import {lessonsRoute} from './lessonsRoute';
+import {lessonDetailRoute} from './lessonDetailRoute';
+
 const bodyParser = require('body-parser');
 
 const app: Application = express();
@@ -26,7 +25,7 @@ app.route('/api/lessons/:id').get(lessonDetailRoute);
 
 
 app.listen(8090, () => {
-    console.log('Server is now running on port 8090 ...');
+  console.log('Server is now running on port 8090 ...');
 });
 
 

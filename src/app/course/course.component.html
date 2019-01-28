@@ -8,7 +8,9 @@
         <button (click)="nextLessonsPage()">Next</button>
     </div>
 
-    <lessons-list [lessons]="lessons$ | async"></lessons-list>
+    <lessons-list [lessons]="lessons$ | async" ></lessons-list>
+
+  {{ page$ | async }}
 
 </div>
 
